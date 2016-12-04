@@ -1,0 +1,26 @@
+// Variables
+
+$darkolivegreen: #556B2F;
+$ivory3: #CDCDC1;
+$olivedrab3: #9ACD32;
+$my-font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+@mixin box-shadow() {
+ box-shadow: $ivory3 1px 1px 5px 0px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin hover-transition($time) {
+       -o-transition: $time;
+      -ms-transition: $time;
+     -moz-transition: $time;
+  -webkit-transition: $time;
+  		  transition: $time;
+}
+

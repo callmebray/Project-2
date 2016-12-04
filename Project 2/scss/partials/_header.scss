@@ -1,0 +1,32 @@
+// Header SCSS
+
+#header {
+
+    nav {
+    	float: right;
+    	margin-top: 15px;
+
+        li + li {
+            border-left: solid 1px $ivory3;
+        }
+
+    	li {
+    		float: left;
+            list-style-type: none;
+            padding: 10px;
+            font-size: 16px; 
+            font-weight: 800;
+            line-height: 1px;
+
+            a {
+                color: $olivedrab3;
+            	@include hover-transition(.4s);
+            	text-decoration: none;
+            }
+            a:hover {
+            	color: $ivory3;
+            	cursor: pointer;
+            }
+		}	
+	}
+}// #header

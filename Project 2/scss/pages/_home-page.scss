@@ -1,0 +1,76 @@
+// Home Page SCSS
+
+#home-page {
+
+	h1 {
+		color: $darkolivegreen;	
+	}
+	h2 {
+		color: $olivedrab3;
+		text-align: justify;
+	}
+
+	.banner-container,
+	.content-container,
+	.thumbnails-container, 
+	.content-container-bottom {
+		margin: 30px 0;
+	}
+
+	//banner
+	.banner-container{
+		display: block;
+		text-align: center;
+
+    	img {
+    		margin-left: 0;
+    		margin-right: 0;
+    		width: 100%;
+    		@include box-shadow();
+    		@include border-radius(3px);
+    	}
+	}
+	//end banner
+
+	//thumbnails	
+    .thumbnails-container {
+    	display: block;
+
+    	.thumbnail-gallery {
+    		text-align: center;
+    		display: inline-block;
+    		width: 100%;
+
+				img + img {
+					margin-left: 20px + 20px;
+				}
+
+    			img {
+    				width: 22%;
+    				cursor: pointer;
+					@include box-shadow();
+					@include border-radius(3px);
+    			}
+    	}
+    }
+	//end thumbnails
+
+	//bottom conatiner
+    .content-container-bottom {
+    	@extend .banner-container;
+
+   		.content-left {
+    		width: 48%;
+    		display: inline-block;
+        	vertical-align: top;
+        	text-align: justify;
+        	padding-right: 10px + 10px;
+    	}
+    	.content-right {
+    		@extend .content-left;
+    		padding: 0 0 0 20px;
+    	}
+	}
+	//end bottom container
+
+}// #home-page
